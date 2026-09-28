@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: saas-mvp
+
+  profiles:
+    active: dev
+
+  security:
+    user:
+      name: user
+      password: user123
