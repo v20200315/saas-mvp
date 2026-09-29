@@ -1,9 +1,9 @@
-package com.lsxuan.saas.interfaces.customer;
+package com.lsxuan.saas.interfaces.api.customer;
 
 import com.lsxuan.saas.application.customer.CustomerApplicationService;
-import com.lsxuan.saas.interfaces.customer.dto.CreateCustomerRequest;
-import com.lsxuan.saas.interfaces.customer.dto.CustomerResponse;
-import com.lsxuan.saas.interfaces.customer.dto.UpdateCustomerRequest;
+import com.lsxuan.saas.interfaces.api.customer.dto.CreateCustomerRequest;
+import com.lsxuan.saas.interfaces.api.customer.dto.CustomerResponse;
+import com.lsxuan.saas.interfaces.api.customer.dto.UpdateCustomerRequest;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
