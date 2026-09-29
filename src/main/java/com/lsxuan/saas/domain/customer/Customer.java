@@ -33,6 +33,8 @@ public class Customer {
 
         Customer customer = new Customer();
 
+        LocalDateTime now = LocalDateTime.now();
+
         customer.id = UuidCreator.getTimeOrderedEpoch();
         customer.tenantId = tenantId;
         customer.name = name;
@@ -40,8 +42,10 @@ public class Customer {
         customer.contactPhone = contactPhone;
         customer.email = email;
         customer.status = CustomerStatus.ACTIVE;
-        customer.createdAt = LocalDateTime.now();
+        customer.createdAt = now;
         customer.createdBy = operatorId;
+        customer.updatedAt = now;
+        customer.updatedBy = operatorId;
 
         return customer;
     }
@@ -124,7 +128,7 @@ public class Customer {
     }
 
     private static void validateOperatorId(UUID operatorId) {
-        
+
         if (operatorId == null) {
             throw new IllegalArgumentException("operatorId不能为空");
         }

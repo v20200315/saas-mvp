@@ -9,3 +9,10 @@ spring:
     user:
       name: user
       password: user123
+
+  sql:
+    init:
+      mode: always
+
+mybatis-plus:
+  type-handlers-package: com.lsxuan.saas.infrastructure.persistence.typehandler

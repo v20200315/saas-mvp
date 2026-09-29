@@ -1,0 +1,31 @@
+### 创建客户
+POST http://localhost:8082/api/customers
+Authorization: Basic victor 123456
+Content-Type: application/json
+
+{
+  "name": "ABC科技有限公司",
+  "contactName": "张三",
+  "contactPhone": "13800138000",
+  "email": "zhangsan@example.com"
+}
+
+### 查询客户列表
+GET http://localhost:8082/api/customers
+
+### 查询客户
+GET http://localhost:8082/api/customers/{id}
+
+### 修改客户
+PUT http://localhost:8082/api/customers/{id}
+Content-Type: application/json
+
+{
+  "name": "ABC科技有限公司",
+  "contactName": "李四",
+  "contactPhone": "13900139000",
+  "email": "lisi@example.com"
+}
+
+### 停用客户
+DELETE http://localhost:8082/api/customers/{id}
