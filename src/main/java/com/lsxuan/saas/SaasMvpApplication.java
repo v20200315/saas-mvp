@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SaasMvpApplication {
 
     public static void main(String[] args) {
-        
+
         SpringApplication.run(SaasMvpApplication.class, args);
     }
+
 }

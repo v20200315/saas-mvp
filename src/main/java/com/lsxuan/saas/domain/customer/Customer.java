@@ -26,7 +26,6 @@ public class Customer {
 
     public static Customer create(UUID tenantId, String name, String contactName, String contactPhone, String email,
         UUID operatorId) {
-
         validateTenantId(tenantId);
         validateName(name);
         validateOperatorId(operatorId);

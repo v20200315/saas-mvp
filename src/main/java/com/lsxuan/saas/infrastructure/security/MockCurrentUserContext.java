@@ -13,11 +13,13 @@ public class MockCurrentUserContext implements CurrentUserContext {
 
     @Override
     public UUID userId() {
+
         return USER_ID;
     }
 
     @Override
     public UUID tenantId() {
+        
         return TENANT_ID;
     }
 }
