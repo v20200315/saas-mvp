@@ -3,9 +3,9 @@ package com.lsxuan.saas.application.customer;
 import com.lsxuan.saas.domain.customer.Customer;
 import com.lsxuan.saas.domain.customer.CustomerRepository;
 import com.lsxuan.saas.infrastructure.security.CurrentUserContext;
-import com.lsxuan.saas.interfaces.api.customer.dto.CreateCustomerRequest;
-import com.lsxuan.saas.interfaces.api.customer.dto.CustomerResponse;
-import com.lsxuan.saas.interfaces.api.customer.dto.UpdateCustomerRequest;
+import com.lsxuan.saas.interfaces.api.v1.customer.dto.CreateCustomerRequest;
+import com.lsxuan.saas.interfaces.api.v1.customer.dto.CustomerResponse;
+import com.lsxuan.saas.interfaces.api.v1.customer.dto.UpdateCustomerRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -1,9 +1,9 @@
-package com.lsxuan.saas.interfaces.api.customer;
+package com.lsxuan.saas.interfaces.api.v1.customer;
 
 import com.lsxuan.saas.application.customer.CustomerApplicationService;
-import com.lsxuan.saas.interfaces.api.customer.dto.CreateCustomerRequest;
-import com.lsxuan.saas.interfaces.api.customer.dto.CustomerResponse;
-import com.lsxuan.saas.interfaces.api.customer.dto.UpdateCustomerRequest;
+import com.lsxuan.saas.interfaces.api.v1.customer.dto.CreateCustomerRequest;
+import com.lsxuan.saas.interfaces.api.v1.customer.dto.CustomerResponse;
+import com.lsxuan.saas.interfaces.api.v1.customer.dto.UpdateCustomerRequest;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/customers")
+@RequestMapping("/api/v1/customers")
 public class CustomerController {
 
     private final CustomerApplicationService customerApplicationService;

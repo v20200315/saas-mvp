@@ -1,4 +1,4 @@
-package com.lsxuan.saas.interfaces.api.customer.dto;
+package com.lsxuan.saas.interfaces.api.v1.customer.dto;
 
 import com.lsxuan.saas.domain.customer.Customer;
 import com.lsxuan.saas.domain.customer.CustomerStatus;

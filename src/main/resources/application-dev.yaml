@@ -2,14 +2,8 @@ server:
   port: 8082
 
 spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/saas_mvp?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
-    username: root
-    password: 123456
-
   config:
     import: optional:nacos:saas-dev.yml
-
   cloud:
     nacos:
       server-addr: localhost:8848

@@ -14,8 +14,8 @@ public class SecurityConfig {
         http.csrf(csrf -> csrf.disable()).authorizeHttpRequests(
             auth -> auth.requestMatchers("/login", "/auth/**", "/error").permitAll()
                 .requestMatchers("/css/**", "/js/**", "/images/**", "/fonts/**", "/favicon.ico").permitAll()
-                .requestMatchers("/console/**").authenticated().requestMatchers("/api/**").authenticated().anyRequest()
-                .permitAll());
+                .requestMatchers("/api/v1/ai/**").permitAll().requestMatchers("/console/**").authenticated()
+                .requestMatchers("/api/**").authenticated().anyRequest().permitAll());
 
         return http.build();
     }
