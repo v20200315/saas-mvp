@@ -1,3 +1,0 @@
-### AI Chat
-GET http://localhost:8082/api/v1/ai/chat?message=你好，请介绍一下你自己
-Accept: text/plain
